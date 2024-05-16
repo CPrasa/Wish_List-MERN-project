@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Header from "./Header";
 
 export default function SignUp() {
   const [firstName, setFirstName] = useState("");
@@ -29,7 +30,9 @@ export default function SignUp() {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center" style={{
+    <div>
+      <Header/>
+      <div className="container d-flex justify-content-center align-items-center" style={{
       border: '2px solid rgba(0, 0, 0, 0.1)',
       borderRadius: '10px', // Added border radius
       boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.2)', // Increased shadow
@@ -37,7 +40,7 @@ export default function SignUp() {
       height: '600px',
       marginTop: '50px'
     }}>
-      <div className="container">
+      <div>
         <h2 className="text-center">SIGN UP</h2>
         <form>
           <div className="form-group">
@@ -92,6 +95,7 @@ export default function SignUp() {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }

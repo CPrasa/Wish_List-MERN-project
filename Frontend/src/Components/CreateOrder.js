@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Headeradmin from "./Headeradmin";
 
 export default function CreateProduct() {
   const [name, setName] = useState("");
@@ -60,7 +61,9 @@ export default function CreateProduct() {
   }
 
   return (
-    <div className="container">
+    <div>
+      <Headeradmin/>
+      <div className="container">
       <div style={{ height: '20px' }}></div>
       <h2>CREATE PRODUCT</h2>
       <form>
@@ -150,5 +153,7 @@ export default function CreateProduct() {
         </table>
       </div>
     </div>
+    </div>
+    
   );
 }

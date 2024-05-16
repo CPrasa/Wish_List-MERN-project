@@ -16,7 +16,7 @@ function App() {
 
     <Router>
     <div>
-     <Header/>
+     
      <Routes>
       <Route path="" exact Component={LandingPage} /> 
      </Routes>

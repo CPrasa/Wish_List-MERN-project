@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Header from "./Header";
 
 export default function Loging() {
   const [loginData, setLoginData] = useState({
@@ -48,6 +49,8 @@ export default function Loging() {
   };
 
   return (
+   <div>
+    <Header/>
     <div className="container d-flex justify-content-center align-items-center" style={{ 
       border: '2px solid rgba(0, 0, 0, 0.1)',
       borderRadius: '10px',
@@ -95,5 +98,6 @@ export default function Loging() {
         <div style={{ height: '10px' }}></div>
       </div>
     </div>
+   </div>
   );
 }
